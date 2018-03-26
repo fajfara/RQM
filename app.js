@@ -27,7 +27,12 @@ $(document).ready(function(){
     function insertHTML(data){
         var index = Math.floor((Math.random() * 1640) + 1);
         $("#quote-block").html(data[index].quoteText);
-        $("#quoted-man").html(data[index].quoteAuthor);
+        if(data[index].quoteAuthor == ''){
+            $("#quoted-man").html('No author');
+        }
+        else{
+            $("#quoted-man").html(data[index].quoteAuthor);
+        }
     }
 });
 

@@ -4,6 +4,7 @@ var quoteText = '';
 var index = 0;
 var data = [];
 
+
 $(document).ready(function(){
     var request = new XMLHttpRequest();
     var requestURL = 'https://raw.githubusercontent.com/4skinSkywalker/Database-Quotes-JSON/master/quotes.json';
@@ -31,8 +32,8 @@ $(document).ready(function(){
             insertHTML(data);
         }
         request.send();
-    
-        
+
+
     });
 
 
@@ -43,8 +44,8 @@ $(document).ready(function(){
         var shareURL = 'https://twitter.com/intent/tweet?text=' + enCoded;
         windowPopTwitter(shareURL);
     });
-    
-    
+
+
 });
 
 function insertHTML(data){
@@ -61,6 +62,3 @@ function insertHTML(data){
 function windowPopTwitter(url){
     var openWin = window.open(url, 'Twitter share', 'height=600, width=500');
 }
-
-
-

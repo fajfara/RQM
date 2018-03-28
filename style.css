@@ -14,9 +14,34 @@ h1{
     text-align: center;
 }
 
-#btnTwit{
-    margin-left: 20px;
+#button{
+    width: 200px;
 }
+
+#btnTwit{
+    width: 200px;
+}
+
+#startAnim{
+    width: 200px;
+}
+
+#stopAnim{
+    width: 200px;
+}
+.topBtns{
+    text-align: center;
+    width: 410px;
+    margin: 0 auto;
+}
+.botBtns{
+    position: relative;
+    top: 20px;
+    text-align: center;
+    width: 410px;
+    margin: 0 auto;
+}
+
 
 @media only screen and (max-width: 600px) {
     .container h1{

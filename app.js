@@ -45,6 +45,14 @@ $(document).ready(function(){
         windowPopTwitter(shareURL);
     });
 
+    $("#stopAnim").click(function(){
+        $("h1").removeClass("animated pulse infinite");
+    });
+
+    $("#startAnim").click(function(){
+        $("h1").addClass("animated pulse infinite");
+    });
+
 
 });
 
